@@ -90,8 +90,8 @@ class TypeWriter {
 // Init TypeWriter
 document.addEventListener('DOMContentLoaded', () => {
     const txtElement = document.querySelector('.typing-text');
-    const words = ["Ingénieur Systèmes Industriels", "Expert en Microcontrôleurs", "Innovateur Technique", "Passionné d'Automatisation"];
-    new TypeWriter(txtElement, words, 2000);
+    const words = ["technicien supérieur en Genie Electrique", "technicien supérieur en Systèmes Industriels", "technicien supérieur en programmation de Microcontrôleurs", "Innovateur Technique", "Passionné d'Automatisation","Passionné d'Automatisation"];
+    new TypeWriter(txtElement, words, 2500);
 });
 
 // Smooth Scrolling
@@ -212,7 +212,7 @@ contactForm.addEventListener('submit', function(e) {
     const subject = document.getElementById('subject').value;
     const message = document.getElementById('message').value;
     
-    const whatsappMessage = `*Nouveau contact portfolio*%0A%0A*Nom:* ${name}%0A*Email:* ${email}%0A*Sujet:* ${subject || 'Non spécifié'}%0A*Message:* ${message}`;
+    const whatsappMessage = ` *Nouveau contact portfolio* \n\n *Nom:* ${name}  \n*Email:* ${email}  \n*Sujet:* ${subject || 'Non spécifié'}  \n\n *Message:* ${message} `;
     
     const whatsappURL = `https://wa.me/22940377059?text=${encodeURIComponent(whatsappMessage)}`;
     
