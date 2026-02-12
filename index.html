@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio professionnel de Fabio AGBOTON - Expert en systèmes industriels et programmation de microcontrôleurs">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <title>Fabio AGBOTON | Ingénieur Systèmes Industriels</title>
+</head>
+<body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Contact Popup -->
+    <div class="contact-popup" id="contactPopup">
+        <div class="popup-content">
+            <p>Vous avez déjà tout vu !</p>
+            <a href="#contact" class="popup-link">Et si on prenait contact ?</a>
+            <button class="popup-close" id="popupClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-text">FABIO AGBOTON</span>
+                    <span class="logo-dot">.</span>
+                </div>
+                
+                <nav class="nav">
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="#home" class="nav-link active">Accueil</a></li>
+                        <li><a href="#services" class="nav-link">Services</a></li>
+                        <li><a href="#projects" class="nav-link">Projets</a></li>
+                        <li><a href="#journey" class="nav-link">Parcours</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                        <!-- CTA pour mobile seulement -->
+                        <li class="mobile-cta">
+                            <a href="#contact" class="btn btn-primary">Discutons</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="nav-actions">
+                        <!-- CTA Desktop seulement -->
+                        <a href="#contact" class="btn btn-outline desktop-cta">Discutons</a>
+                        <button class="menu-toggle" id="menuToggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-content-top">
+                        <h1 class="hero-title">
+                            <span class="gradient-text">Solutions</span> & 
+                            <span class="gradient-text">Technologies </span> au service de l'industrie et du domestique.
+                        </h1>
+                        <p class="hero-subtitle">Je suis <span class="typing-text"></span></p>
+                    </div>
+
+                    <div class="hero-image-mobile">
+                        <div class="image-wrapper">
+                            <img src="photo.jpeg" alt="Fabio AGBOTON" class="profile-image">
+                            <div class="image-overlay"></div>
+                            <div class="floating-elements">
+                                <div class="floating-element element-1">
+                                    <i class="fas fa-microchip"></i>
+                                </div>
+                                <div class="floating-element element-2">
+                                    <i class="fas fa-cogs"></i>
+                                </div>
+                                <div class="floating-element element-3">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-content-bottom">
+                        <p class="hero-description">
+                            Passionné par les systèmes industriels, les installations électriques domestiques et la programmation embarquée, je conçois des solutions innovantes qui transforment les concepts dites "<span class="gradient-text">rêves - immaginaires</span>" en réalité tangible.
+                        </p>
+                        
+                        <div class="hero-actions">
+                            <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+                            <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                        </div>
+                        
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label">Projets réalisés</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Satisfaction client</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">3+</span>
+                                <span class="stat-label">Années d'expériences/d'apprentissages continue</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-image-desktop">
+                    <div class="image-wrapper">
+                        <img src="photo.jpeg" alt="Fabio AGBOTON" class="profile-image">
+                        <div class="image-overlay"></div>
+                        <div class="floating-elements">
+                            <div class="floating-element element-1">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <div class="floating-element element-2">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <div class="floating-element element-3">
+                                <i class="fas fa-code"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Services d'Excellence</h2>
+                <p class="section-subtitle">Des solutions sur mesure pour vos besoins industriels et domestiques.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Programmation Embarquée</h3>
+                    <p>Développement de solutions intelligentes avec microcontrôleurs (Arduino, ESP32) pour l'automatisation industrielle et bâtiment.</p>
+                    <ul class="service-features">
+                        <li>Automatisation intelligente</li>
+                        <li>IoT & Connectivité</li>
+                        <li>Contrôle en temps réel</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3>Systèmes Industriels</h3>
+                    <p>Installation, maintenance et optimisation de machines et systèmes industriels complexes.</p>
+                    <ul class="service-features">
+                        <li>Installation complète</li>
+                        <li>Maintenance préventive</li>
+                        <li>Optimisation des processus</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovation Technique</h3>
+                    <p>Conception et réalisation de projets innovants répondant aux défis industriels et domestiques modernes.</p>
+                    <ul class="service-features">
+                        <li>Prototypage rapide</li>
+                        <li>Solutions sur mesure</li>
+                        <li>Contrôle et efficacité </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projets Réalisés</h2>
+                <p class="section-subtitle">Des réalisations concrètes qui font la différence</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="IMG_4497~2.jpg" alt="Couveuse Automatisée">
+                        <div class="project-overlay">
+                            <span class="project-tag">Elevage</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Gestion d'incubation par microcontrôleur (couveuse autmatisé)</h3>
+                        <p>Ce projet consiste à consevoir une enceinte thermique régulée dédiée à l'incubation artificielle. 
+                            Le système assure le maintien des conditions climatiques optimales pour le 
+                        dévelloppement embryonnaire grâce à un avertissement en temps réel(via l'écran LCD).</p>
+                        <div class="project-tech">
+                            <span>Arduino</span>
+                            <span>DHT11</span>
+                            <span>LCD</span>
+                        </div>
+                        <a href="#contact" class="project-link">Discuter du projet <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <video src="-8715393003038649005.mp4" controls height="100%" width="100%"></video>
+                        <div class="project-overlay">
+                            <span class="project-tag">Domotique</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Commande d'éclairage par détection acoustique</h3>
+                        <p>Ce projet porte sur la conception d'un interrupteur sonore 
+                            permettant de piloter une lampe via un signal impulsionnel (clap).
+                        Le système repose sur la conversion d'une onde sonore en signal électrique pour
+                    commuter un circuit de puissance.</p>
+                        <div class="project-tech">
+                            <span>Arduino uno</span>
+                            <span>Microphone</span>
+                            <span>C++</span>
+                        </div>
+                        <a href="#contact" class="project-link">Discuter du projet <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="20250301_083856~2.jpg" alt="robot éviteur d'obstacle">
+                        <div class="project-overlay">
+                            <span class="project-tag">Exploration</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Navigation autonome par détection d'obstacles</h3>
+                        <p>Ce projet consite à concevoir un véhicule robotisé intélligent capable de se déplacer sans 
+                            collision dans un environnement inconnu. Le système analyse son entourage en 
+                            temps réel pour recalculer sa trajectoire instentnément.
+                        </p>
+                        <div class="project-tech">
+                            <span>Kit voiture</span>
+                            <span>Diver moteur</span>
+                            <span>Capteur ultrason</span>
+                        </div>
+                        <a href="#contact" class="project-link">Discuter du projet <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                 <div class="project-card">
+                    <div class="project-image">
+                        <img src="IMG_2025-05-19-07-08-46-367~2.jpg" alt="BASI">
+                        <div class="project-overlay">
+                            <span class="project-tag">ASI</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>BASI (Bloc D'allimentation Sans Interruption)</h3>
+                        <p>Dispositif de basculement d'une source d'allimentation principale
+                            vers une autre source d'allimentation secondaire avec un controleur
+                             de présence de tension et un onduleur de maintien de tension.</p>
+                        <div class="project-tech">
+                            <span>Arduino uno </span>
+                            <span>Relais 5v</span>
+                            <span>Diodes</span>
+                        </div>
+                        <a href="#contact" class="project-link">Discuter du projet <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                 <div class="project-card">
+                    <div class="project-image">
+                        <img src="20250506_160259~2.jpg" alt="Onduleur fait maison">
+                        <div class="project-overlay">
+                            <span class="project-tag">Electronique</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Conversion statique d'énergie : Ondulateur domestique</h3>
+                        <p>Ce projet porte sur la conception d'un convertisseur DC/AC permettent de transformer une tension
+                             continue de batterie  en une tension alternative exploitable.
+                            Il vise à fournir une source d'énergie autonome pour des appareils domestiques de faible puissance.</p>
+                        <div class="project-tech">
+                            <span>Transistor</span>
+                            <span>Transformateur</span>
+                            <span>Diodes</span>
+                        </div>
+                        <a href="#contact" class="project-link">Discuter du projet <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                 <div class="project-card">
+                    <div class="project-image">
+                        <img src="20260125_174132.jpg" alt="Electricité bâtiment">
+                        <div class="project-overlay">
+                            <span class="project-tag">Electricité</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Installation électrique dommestique</h3>
+                        <p>Evaluation, proposition, dimenssionnement et installation d'un système électrique dommestique.</p>
+                        <div class="project-tech">
+                            <span>Lampes</span>
+                            <span>Disjoncteurs</span>
+                            <span>Interrupteurs</span>
+                            <span>Prises</span>
+                        </div>
+                        <a href="#contact" class="project-link">Discuter du projet <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                 <div class="project-card">
+                    <div class="project-image">
+                        <img src="20260205_203342.jpg" alt="MAST">
+                        <div class="project-overlay">
+                            <span class="project-tag">Industrie</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Démarrage d'un moteur à courant alternatif</h3>
+                        <p>Système de gestion du démarrage et de l'arrêt d'un moteur à courant alternatif dans deux sens de marche avec une commande via l'ATMEGA328P.</p>
+                        <div class="project-tech">
+                            <span>ATMEGA328P</span>
+                            <span>Relais 5v</span>
+                            <span>batterie</span>
+                        </div>
+                        <a href="#contact" class="project-link">Discuter du projet <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        
+                        <video src="FB_VID_2159923234697368046.mp4" width="100%" height="100%" controls></video>
+                        <div class="project-overlay">
+                            <span class="project-tag">Domotique</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Sécurisation d'accès par identification électronique </h3>
+                        <p>Ce projet porte sur la création d'un verrouillage intelligent permettant
+                            de restreindre l'entrée à un espace défini.
+                            Le système valide l'identité de l'utilisateur avant d'autoriser l'ouverture
+                            physique d'un accès.
+                        </p>
+                        <div class="project-tech">
+                            <span>Arduino uno</span>
+                            <span>Capteur RFID</span>
+                            <span>LCD</span>
+                            <span>Clavier matriciel</span>
+                        </div>
+                        <a href="#contact" class="project-link">Discuter du projet <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="IMG_3959~2.jpg" alt="PEA">
+                        <div class="project-overlay">
+                            <span class="project-tag">Electricité</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Pompage d'eau automatique</h3>
+                        <p>Ce projet présente une solution de pilotage électromécanique 
+                            pour la gestion automatisé d'un réservoir.
+                        L'objectif est d'assurer l'autonomie du remplissage en utilisant 
+                        un contacteur à flotteur pour commander l'activation ou l'arrêt du moteur 
+                    selon le niveau d'eau.</p>
+                        <div class="project-tech">
+                            <span>Caoteur de niveau d'eau</span>
+                            <span>Moteur pompe</span>
+                        </div>
+                        <a href="#contact" class="project-link">Discuter du projet <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Capture d'écran 2026-02-12 044917.png" alt="web">
+                        <div class="project-overlay">
+                            <span class="project-tag">WEB</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Platforme de déploiement et vitrine logitielle</h3>
+                        <p>Ce projet consiste à concevoir une interface web optimisé servant de point 
+                            de contact entre une application et ses utilisateurs.
+                             Le site est structuré pour maximiser le taux de conversion tout en offrant un support pédagoque complet.
+                              <a href="https://nexus-arena-118r.onrender.com/" class="project-link"> Visiter le site <i class="fas fa-arrow-right"></i> </a>
+                        </p>
+                        <div class="project-tech">
+                            <span>Typecript</span>
+                            <span>React Native</span>
+                            <span>Js</span>
+                           
+                        </div>
+                        <a href="#contact" class="project-link">Discuter du projet <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="projects-cta">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-briefcase"></i> Discuter d'un projet
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Section -->
+    <section class="journey" id="journey">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Parcours Professionnel</h2>
+                <p class="section-subtitle">Un chemin d'excellence technique</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2025 - Présent</div>
+                    <div class="timeline-content">
+                        <h3>Étudiant en MASTER (Systèmes Industriels)</h3>
+                        <p>Developpement et spécialisation en installations élèctriques industrielle et domestique.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2024 - 2025</div>
+                    <div class="timeline-content">
+                        <h3>Licence Professionnelles</h3>
+                        <p>Technicien supérieur en génie électrique option système industrielle</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2021 - 2022</div>
+                    <div class="timeline-content">
+                        <h3>BACCALAUREAT</h3>
+                        <p>Bachelier de l'enseignement du Second Degré en série F3 (Electrotechnique) </p>
+                    </div>
+                </div>
+                 <div class="timeline-item">
+                    <div class="timeline-date">2019 - 2020</div>
+                    <div class="timeline-content">
+                        <h3>Certificat d'Aptitude Proffessionnelle (CAP) </h3>
+                        <p>Sciences et Techniques Indusrielles, sptécialité : ELECTRICITE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-info-content">
+                        <h2 class="section-title">Travaillons Ensemble</h2>
+                        <p class="contact-description">
+                            Vous avez un projet industriel ou une idée innovante ? Discutons-en pour la concrétiser.
+                        </p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Téléphone</h4>
+                                    <a href="tel:+2290140377059">+229 01 40 37 70 59</a> <br>
+                                     <a href="tel:+2290162330710">+229 01 62 33 07 10</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <a href="mailto:dtagboton@gmail.com">dtagboton@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Localisation</h4>
+                                    <p>Abomey-Calavi, Bénin, Afrique de l'Ouest</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <div class="social-links">
+                            <a href="http://linkedin.com/in/cliff-fabio-dotou-agboton-477863317" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://wa.me/message/RXRW73Q6WZZZE1" class="social-link">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="https://x.com/fabio_00009?s=11" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com/fabio_agboton?igshid=MWFpaWZ0YTQ5cDk4eg" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Votre nom *" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Votre email *" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Sujet">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Votre message *" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Envoyer le message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">FABIO AGBOTON</span>
+                    <span class="logo-dot">.</span>
+                </div>
+                <p class="footer-tagline">Transformer l'innovation en réalité industrielle</p>
+                <div class="footer-links">
+                    <a href="#home">Accueil</a>
+                    <a href="#services">Services</a>
+                    <a href="#projects">Projets</a>
+                    <a href="#journey">Parcours</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <p class="copyright">
+                    &copy; 2026 Fabio AGBOTON. Tous droits réservés.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
